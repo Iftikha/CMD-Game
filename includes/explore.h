@@ -98,6 +98,7 @@ int checkForEntities()
             }
         }
     }
+    return 0;
 }
 
 // For Exploration;
