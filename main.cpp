@@ -38,7 +38,8 @@ void commandHandle(string inputCommand) {
                 return;
             }
 
-            int cont = exploreLogic(direction, step);
+            exploreLogic(direction, step);
+            int cont = checkForEntities();
             if (cont == 2) {
                 cout << "You have escaped the school! You Won!" << endl;
                 exit(0);

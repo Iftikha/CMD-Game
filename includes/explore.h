@@ -102,7 +102,7 @@ int checkForEntities()
 }
 
 // For Exploration;
-int exploreLogic(string direction, int steps)
+void exploreLogic(string direction, int steps)
 {
     switch (currentCoordinates[0])
     {
@@ -215,11 +215,6 @@ int exploreLogic(string direction, int steps)
         cout << "Invalid room!\n";
         break;
     }
-
-    int cont;
-    // Check for entities after movement
-    cont = checkForEntities();
-    return cont;
 }
 
 #endif
